@@ -28,3 +28,19 @@ The script `q1_assignment2.py` defines the CNN model architecture and allows for
 
 You can execute the script directly from your terminal within the project directory (`D:\assignment 2`). It accepts command-line arguments to configure the model, but also uses defaults suitable for testing and the Q1 calculations.
 
+
+## Question 2: Dataset Preparation
+
+The script `dataset_q2_assignment2.py` prepares the iNaturalist dataset for training.
+
+**Functionality:**
+*   Locates the dataset based on the `DATASET_ROOT` variable (currently set to `D:\inaturalist_12K`).
+*   Defines image transformations: resizing to a fixed size (`IMAGE_HEIGHT`, `IMAGE_WIDTH` - currently 224x224) and normalization using ImageNet stats.
+*   Loads the training data using `torchvision.datasets.ImageFolder`.
+*   Splits the training data into training (80%) and validation (20%) subsets using a fixed random seed (`RANDOM_SEED`) for reproducibility.
+*   Creates PyTorch `DataLoader` instances for training, validation, and (if found) test sets.
+*   Provides the `get_dataloaders` function, which returns the loaders, the number of classes detected, and the class names.
+
+**Running the Script for Testing:**
+
+You can execute the script directly to verify dataset loading and splitting:
