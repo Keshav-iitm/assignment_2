@@ -35,8 +35,9 @@ def get_args():
 
     # Parameters from DEFAULT_CONFIG
     parser.add_argument("--SEED", type=int, default=42, help="Random seed")
-    parser.add_argument("--DATASET_ROOT", type=str, default="./inaturalist_12K",
-                        help="Path to the iNaturalist dataset root")
+    SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+    DEFAULT_DATASET_ROOT = os.path.join(SCRIPT_DIR, "inaturalist_12K")
+    parser.add_argument("--DATASET_ROOT", type=str, default=DEFAULT_DATASET_ROOT)
     parser.add_argument("--IMAGE_SIZE", type=int, default=224, help="Input image size")
 
     # WandB settings

@@ -11,9 +11,17 @@ import argparse
 print(torch.cuda.get_device_name(0))
 # Configuration 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset_root',type=str, default="./inaturalist_12k",required=True, help='Path to dataset root directory')
-args = parser.parse_args()
-DATASET_ROOT = args.dataset_root
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DEFAULT_DATASET_ROOT = os.path.join(SCRIPT_DIR, "inaturalist_12K")
+# Only parse args when run directly
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--DATASET_ROOT", type=str, default=DEFAULT_DATASET_ROOT,
+                        help="Path to the dataset root")
+    args = parser.parse_args()
+    DATASET_ROOT = args.DATASET_ROOT
+else:
+    DATASET_ROOT = DEFAULT_DATASET_ROOT
 IMAGE_HEIGHT = 224
 IMAGE_WIDTH = 224
 BATCH_SIZE = 32
