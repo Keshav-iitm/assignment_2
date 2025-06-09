@@ -177,9 +177,7 @@ python part_b/fine_tune.py
 
 ---
 
-## ✍️ Author
-
-> **DA6401 - Deep Learning**  
+## ✍️ Author  
 >  *A B Keshav Kumar (AE24S021),MS Scholar, IIT Madras* 
 
 ---
