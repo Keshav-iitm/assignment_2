@@ -1,11 +1,11 @@
-# 📦 DA6401 Assignment 2 _ A B Keshav Kumar (AE24S021)
-
+# 📦 Image classification using Convolutional Neural Networks (CNNs)
+This repository was submitted as a part of assignment 2, DA6401, Deep Learning, IIT Madras.
 
 # 🔗 [GitHub Repository] https://github.com/Keshav-iitm/assignment_2.git
 # 📊 [WandB Project Link] https://wandb.ai/ae24s021-indian-institute-of-technology-madras/DA6401-Assignment2/reports/Assignment-2-A-B-Keshav-Kumar-AE24S021-DA6401--VmlldzoxMjIxNzU4OQ?accessToken=a9glsz1iqr0jii0ykwiaw7f8ywh946j56xjojv9fjuq3pnlqhd758uj70gncmigh
 
 
-This repository contains modular Python scripts to solve Part A and Part B of the Deep Learning Assignment 2 (DA6401, IIT Madras). It includes model design, training with hyperparameter sweeps using Weights & Biases (W&B),testing it and fine-tuning a pretrained model on iNaturalist.
+This repository includes model design, training with hyperparameter sweeps using Weights & Biases (W&B),testing it and fine-tuning a pretrained model on iNaturalist.
 
 ---
 
@@ -181,7 +181,6 @@ python part_b/fine_tune.py
 
 > **DA6401 - Deep Learning**  
 >  *A B Keshav Kumar (AE24S021),MS Scholar, IIT Madras* 
-> *Assignment 2 - Part A & Part B*
 
 ---
 
